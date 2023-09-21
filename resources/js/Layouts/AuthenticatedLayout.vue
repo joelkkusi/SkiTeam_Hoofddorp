@@ -32,6 +32,12 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
+                                <NavLink :href="route('participants')" :active="route().current('participants')">
+                                Participants
+                                </NavLink>
+                                <NavLink :href="route('match')" :active="route().current('match')">
+                                    Match
+                                </NavLink>
                             </div>
                         </div>
 
@@ -114,6 +120,12 @@ const showingNavigationDropdown = ref(false);
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('participants')" :active="route().current('participants')">
+                            Participants
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('match')" :active="route().current('match')">
+                            Match
                         </ResponsiveNavLink>
                     </div>
 
